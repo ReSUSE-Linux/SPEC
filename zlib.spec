@@ -15,7 +15,7 @@ format.
 %prep
 %setup -q
 %build
-./configure --prefix=/usr
+./configure --prefix=%_prefix
 make %{?_smp_mflags}
 %check
 make check %{?_smp_mflags}
